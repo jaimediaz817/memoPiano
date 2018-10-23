@@ -94,11 +94,12 @@ let flagInGame           = false;
 let flagGameInit         = false;
 let nivelPorReferencia   = 0;
 
+txtNivel.value = 4;
+
 // Inicio del juego
 botonIniciarJuego.addEventListener('click', function(e){
 	e.preventDefault();	
-	console.log("inicio"+ txtNivel.value)
-
+	console.log("inicio"+ txtNivel.value)	
 	if(!flagInGame){
 		if(txtNivel.value === '' || txtNivel.value === undefined || txtNivel.value === 0){
 			console.log("set 12 default");
